@@ -1,0 +1,58 @@
+name: Client feedback
+description: Comment on the current Impala Operations concept preview.
+title: "Client feedback: "
+labels: [client-feedback]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reviewing the concept. Please submit one item per form so each point can be discussed and tracked separately.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area of the app
+      options:
+        - Dashboard
+        - Assets
+        - Daily capture
+        - Breakdowns
+        - Reports
+        - Navigation or general design
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What should be changed, clarified, added, or removed?
+      placeholder: Describe the comment and why it matters.
+    validations:
+      required: true
+
+  - type: textarea
+    id: location
+    attributes:
+      label: Where did you see this?
+      description: Include the screen, selected role/site, asset, or workflow steps that led here.
+      placeholder: "Example: Site Supervisor > Assets > EXC-104"
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot or supporting detail
+      description: Drag and drop a screenshot here if it will help explain the comment.
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Desktop or laptop
+        - Mobile phone
+        - Tablet
+        - Not applicable
+    validations:
+      required: true
